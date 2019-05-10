@@ -13,12 +13,52 @@ body {
   display: flex;
   overflow: hidden;
 }
+.right {
+  flex-grow: 1;
+  text-align: center;
+}
 img {
   height: 100px;
 }
 .title {
-  flex-grow: 1;
-  text-align: center;
   font-size: 1.3rem;
   margin-top: 10px;
+}
+button.play {
+  background-color: gold;
+  color: #333;
+  border: 0;
+  font-size: 1rem;
+  font-weight: 400;
+  border-radius: 4px;
+  padding: 3px 6px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #00000099;
+}
+.screen {
+  width: 300px;
+  height: 300px;
+  background-color: black;
+  overflow: hidden;
+}
+.screen .text {
+  color: gold;
+  margin-left: 35px;
+  animation: crawl 30s linear;
+}
+@keyframes crawl {
+  from {
+    margin-top: 300px;
+  }
+  to {
+    margin-top: -400px;
+  }
 }
