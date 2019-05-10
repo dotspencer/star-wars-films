@@ -44,7 +44,7 @@ button.play {
   background-color: #00000099;
 }
 .screen {
-  width: 300px;
+  width: 500px;
   height: 300px;
   background-color: black;
   overflow: hidden;
@@ -53,15 +53,21 @@ button.play {
 }
 .screen .text {
   color: gold;
-  margin-left: 40px;
   animation: crawl 30s linear;
   transform: rotateX(50deg) translateY(350px);
+  width: 240px;
+  margin: 0 auto;
 }
 @keyframes crawl {
-  from {
+  0% {
+    opacity: 1;
     transform: rotateX(60deg) translateY(350px);
   }
-  to {
-    transform: rotateX(60deg) translateY(-350px);
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: rotateX(60deg) translateY(-400px);
   }
 }
