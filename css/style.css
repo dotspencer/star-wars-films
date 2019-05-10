@@ -50,6 +50,8 @@ button.play {
   overflow: hidden;
   perspective: 300px;
   transform-style: preserve-3d;
+  margin: 0 auto;
+  margin-top: calc(50vh - 150px);
 }
 .screen .text {
   color: gold;
