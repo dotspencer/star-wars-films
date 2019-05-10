@@ -1,0 +1,24 @@
+* { box-sizing: border-box; }
+body {
+  font-family: system-ui, sans-serif;
+}
+.list {
+  margin: 40px auto;
+  max-width: 300px;
+}
+.film {
+  background-color: whitesmoke;
+  margin: 10px 0;
+  border-radius: 5px;
+  display: flex;
+  overflow: hidden;
+}
+img {
+  height: 100px;
+}
+.title {
+  flex-grow: 1;
+  text-align: center;
+  font-size: 1.3rem;
+  margin-top: 10px;
+}
